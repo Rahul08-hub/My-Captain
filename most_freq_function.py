@@ -7,5 +7,6 @@ def most_frequent():
          d[key]=1
      else:
         d[key]+=1
- print(d)
+ for key in sorted(d , key=d.get ,  reverse=True):
+    print(key , d[key])
 most_frequent()
